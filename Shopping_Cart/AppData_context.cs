@@ -1,11 +1,8 @@
-namespace IdentityAPI.Data;
-using Microsoft.EntityFrameworkCore;
+namespace Shopping_Cart.Data;
 
-namespace AuthenticatedAPI.Data;
-
-public class AppData_Context : DbContext
+public class AppData_Context : security_db_context
 {
-    public AppDataContext(DbContextOptions<AppDataContext> options)
+    public AppData_Context(DbContextOptions<AppData_context> options)
         :base(options)
         {}
 	
